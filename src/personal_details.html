@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>财经早餐-个人中心 个人信息详细</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript" src="js/flexible_css.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+</head>
+
+<body>
+    <div class="mainpack">
+        <div class="personal-page">
+            <div class="personal-info rel">
+                <div class="focusus abs"></div>
+            </div>
+            <div class="telphone"><i></i> 136****8989</div>
+            <div class="infostips">请补充相关信息以便我们为您提供更加完善的服务</div>
+            <form onsubmit="return false;" class="f18 tl">
+                <div class="form-item">
+                    <div class="form-element">
+                        <label class="element-tit">昵称</label>
+                        <input type="text" placeholder="请输入您的昵称">
+                    </div>
+                    <div class="form-element">
+                        <label class="element-tit">性别</label>
+                        <input type="radio" name="sex" value="0" id="rdoMan">
+                        <label for="rdoMan">男</label>
+                        <input type="radio" name="sex" value="1" id="rdoWoman">
+                        <label for="rdoWoman">女</label>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form-element">
+                        <label class="element-tit">生日</label>
+                        <input type="date" placeholder="请选择您的出生日期">
+                    </div>
+                    <div class="form-element">
+                        <label class="element-tit">真实姓名</label>
+                        <input type="text" placeholder="请输入您的真实姓名">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <div class="form-element">
+                        <label class="element-tit">公司</label>
+                        <input type="text" placeholder="请输入您所在公司">
+                    </div>
+                    <div class="form-element">
+                        <label class="element-tit">职位</label>
+                        <input type="text" placeholder="请输入您的职位">
+                    </div>
+                </div>
+                <div class="form-btn mt70">
+                    <button class="btnlogin">保存</button>
+                    <button class="btnlogin mt10 bindtel">更换绑定手机</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="popmask" style="display: none;">
+        <div class="popwin f18">
+            <div class="popheader"></div>
+            <div class="popcnt">
+                <h2>更换绑定手机号</h2>
+                <div class="mt30">
+                    <div class="form-control mb10 rel"><i class="personicon"></i>
+                        <input type="tel" class="telipt" placeholder="请填写手机号码">
+                    </div>
+                    <div class="form-control mb10 rel"><i class="replyicon"></i>
+                        <input type="text" class="yzmipt" placeholder="请填写验证码">
+                        <input type="button" class="yzm" value="获取验证码">
+                    </div>
+                </div>
+            </div>
+            <div class="popfooter">
+                <ul>
+                    <li class="btnOK">确定</li>
+                    <li class="btnCancel">取消</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/zepto.js"></script>
+    <script type="text/javascript" src="js/personal_details.js"></script>
+</body>
+
+</html>

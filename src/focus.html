@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>财经早餐-热股首页 通用提示</title>
+    <!-- build:css css/common.css -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+</head>
+
+<body>
+    <div class="popshadow" style="display: block;background: rgba(0,0,0,0.6);"></div>
+    <!--  <div class="poptips">
+        <div class="poptips-h"></div>
+        <div class="poptips-c">
+            <div class="poptips-prompt">
+                <dl>
+                    <dt class="red">提示</dt>
+                    <dd>很抱歉，请先购买该产品哦！</dd>
+                    <dd>关注微信公众号，即可购买， 还有新人大礼包等你来拿！</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="poptips-f tc">
+            <button class="btngot f18">我知道了</button>
+        </div>
+    </div> -->
+    <div class="poptips">
+        <div class="poptips-h"></div>
+        <div class="poptips-c">
+            <div class="poptips-prompt">
+                <dl>
+                    <dt class="red">提示</dt>
+                    <dd>叮叮叮，您还未完成测评哦！</dd>
+                    <dd>完成测评即可激活您的牛股！ 点击跳转至风险测评。 <br><span class="timer">10</span>秒自动跳转
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="poptips-f tc">
+            <button class="btngot f18">我知道了</button>
+        </div>
+    </div>
+</body>
+<!-- build:js js/zepto.min.js -->
+<script type="text/javascript" src="js/zepto.js"></script>
+<!-- endbuild -->
+<script type="text/javascript">
+    // 倒计时
+    var totalCount = 10;
+    var timer = null;
+    function CountTimer(){
+        if(totalCount<1){
+            totalCount = 3;
+            clearTimeout(timer);
+            timer = null;
+            $('div.popshadow').hide();$('.poptips').hide();
+            return false;
+        }else{
+            totalCount -= 1;
+            $('.timer').html(totalCount);
+            timer = setTimeout(function(){CountTimer();}, 1000);
+        }
+    }
+    CountTimer();
+    $('.btngot').click(function(event) {
+        /* Act on the event */
+         $('div.popshadow').hide();$('.poptips').hide();
+    });
+
+</script>
+</html>

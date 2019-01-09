@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>财经早餐-问答服务</title>
+    <!-- build:css css/common.css -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <div class="mainpack">
+        <!-- 牛股线索问答 qa niugu,热股追踪问答 qa-->
+        <div class="qa niugu" style="display: none;">
+            <div class="qa-top">
+            </div>
+            <div class="qa-cnt">
+            </div>
+            <div class="qa-bottom mt20">
+            </div>
+        </div>
+        <!-- 牛股问答 -->
+        <div class="qa qamore" style="">
+            <div class="qa-top">
+            </div>
+            <div class="personal-products f16">
+                <ul class="grid-item fix">
+                    <li><a href="#"><i class="stockicon"></i>牛股线索</a></li>
+                    <li><a href="#"><i class="hotstockicon"></i>热股追踪</a></li>
+                    <li><a href="#"><i class="diagnoseicon"></i>诊股</a></li>
+                </ul>
+                <!--    <ul class="grid-item fix">
+                    <li class="forward f12"><i class="forwardicon"></i>人工服务上线中<br>敬请期待</li>
+                </ul> -->
+            </div>
+            <div class="q-item mt20">
+                <div class="q-tit">
+                    人工问答
+                    <div class="mine tr"><a href="#" class="myqas">查看我的问答</a></div>
+                </div>
+                <div class="q-cnt">
+                    <textarea cols="30" rows="6" placeholder="点击输入问题，我们将在24小时内进行回复。" class="txtarea"></textarea>
+                </div>
+                <div class="tr">
+                    <button class="btnqa linear">点我提问</button>
+                </div>
+            </div>
+            <div class="q-item">
+                <div class="q-tit">
+                    我的问答
+                </div>
+                <div class="q-cnt">
+                    <dl class="qaitem">
+                        <dt class="f18">
+                            牛股线索都包含哪些内容？
+                            <div class="q-date tr f12 gray">2017-12-19</div>
+                        </dt>
+                        <dd class="f16">
+                            小编正在回复中，请稍等~~
+                            <div class="q-operate tr f12 mt70">
+                                预计答复时间2017-12-20
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl class="qaitem">
+                        <dt class="f18">
+                            牛股线索都包含哪些内容？
+                            <div class="q-date tr f12 gray">2017-12-19</div>
+                        </dt>
+                        <dd class="f16">
+                            牛股线索主要包括: <p>1.黄金线索牛股：视频+研报+持续跟踪的形式构成； </p><p>2.个股跟踪：每周三接到所持个股跟踪研报； </p><p>3.五星短线牛股：每日两条投资小线索提示。</p>
+                            <div class="q-operate tr mt70">
+                                <button class="btnqa linear f12">点我追问</button>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="q-item">
+                <div class="q-tit">
+                    客服微信
+                </div>
+                <div class="q-cnt ml20 mr20">
+                    <p class="mb20 gray">长按下方二维微码，加小编为好友，小编将为您细心解答！</p>
+                    <img src="images/qa_QR.png" alt="" style="width: 9.728rem;height: 5.36rem;max-width: 100%;height: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="http://static.emoney.cn/live/Scripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.myqas').click(function(event) {
+            /* Act on the event */
+            $("html,body").animate({scrollTop:485},1000);
+        });
+        $('.qaitem .btnqa').click(function(event) {
+            /* Act on the event */
+            $("html,body").animate({scrollTop:0},1000);
+        });
+    });
+</script>
+</html>
